@@ -1,0 +1,61 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+.img-logo {
+  height: auto;
+  width: auto;
+  max-height: 60px;
+  max-width: 75px;
+  padding-top: 10px;
+}
+
+.spacer {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  /* overflow-y: auto; */
+}
+.all-wrap {
+  min-height: 100vh;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+
+/*
+ * Make the Component injected by Router Outlet full height:
+ */
+ .all-wrap {
+  min-height: 100vh;
+}
+
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+

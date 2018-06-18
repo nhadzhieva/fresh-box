@@ -1,0 +1,65 @@
+<div class="content mat-typography">
+<h1>Ten-Min Ginger Chicken Stir-Fry</h1>
+    <mat-divider></mat-divider>
+<div>
+  {{editedRecipe.caption}}
+    <div>
+        <i class="material-icons">access_time</i>
+     {{editedRecipe.timeForCook}} mins time for cook
+    </div>
+   <div> 
+       <i class="material-icons">location_on</i>{{editedRecipe.type}} Cuisine
+    </div>
+    
+</div>
+<mat-divider></mat-divider>
+<h2>
+    In your box
+</h2>
+<div class="list">
+<mat-grid-list cols="5" role="list">
+    <mat-grid-tile>
+      <div>
+    <img class="round-img values" src="/assets/images/ingr/chicken.jpg" alt="quality">
+    <p> 250g chicken breast</p>
+  </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div>
+      <img class="round-img values" src="/assets/images/ingr/baby-corn-2-x200.jpg" alt="simpicity">
+       <p>120g baby corn</p>
+    </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <div>
+        <img class="round-img values" src="/assets/images/ingr/sugarsnap-peas-x200.jpg" alt="variety">
+        <p>80g sugar snap peas</p>
+      </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div>
+          <img class="round-img values" src="/assets/images/ingr/spring-onion-x200.jpg" alt="variety">
+          <p>1 spring onion</p>
+        </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div>
+          <img class="round-img values" src="/assets/images/ingr/fine-egg-noodles-x200.jpg" alt="variety">
+         <p>2 fine egg noodle nests</p>
+        </div>
+          </mat-grid-tile>
+  
+
+</mat-grid-list>
+</div>
+<mat-divider></mat-divider>
+<h3>What you will need:</h3>
+<p>
+    Butter, Salt, Vegetable oil
+</p>
+<mat-divider></mat-divider>
+    <iframe  class="iframe" width="560" height="315" src="https://www.youtube.com/embed/OtLfLQPqRm0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="text-centered btn-purchase" >
+            <a  mat-raised-button  color="primary" routerLink="/box">Get all intructions and products</a>
+    </div>
+</div>

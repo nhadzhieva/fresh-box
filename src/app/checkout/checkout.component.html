@@ -1,0 +1,27 @@
+<img class="img" src="assets/images/red-yellow.jpg">
+<div class="mat-typography">
+  <mat-list>
+    <mat-list-item *ngFor="let order of orders" [class.selected]="order === selectedOrder" (click)="onSelect(order)">
+      <h3 matLine>{{ order.title }} </h3>
+      <mat-icon>attach_money </mat-icon>{{order.price}}
+      <button mat-icon-button class="material-icons close"
+          (click)="deleteOrder(order.id)">
+        <i class="material-icons">close</i>
+      </button>
+
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <h2 matLine>Total amount </h2>
+      <mat-icon >attach_money </mat-icon>{{totalPrice()}}
+    </mat-list-item>
+
+      <a class="button-fixed"mat-raised-button color="primary" routerLink="/login">ORDER</a>
+
+   
+  </mat-list>
+
+
+
+
+</div>

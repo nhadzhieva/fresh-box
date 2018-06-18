@@ -1,0 +1,28 @@
+<mat-sidenav-container class="all-wrap" fullscreen>
+  <mat-toolbar class="cl" color="primary">
+    <mat-toolbar-row>
+      <a routerLink="/home">
+        <img class="img-logo" src="/assets/images/logo-green.png">
+      </a>
+      <a routerLink="/recipes" mat-button>Recipes</a>
+      <a routerLink="/box" mat-button>The Box</a>
+      <!-- <a routerLink="/about" mat-button>About</a> -->
+      <span class="example-spacer"></span>
+      <a routerLink="/login" mat-button>Login</a>
+      <a routerLink="/checkout" mat-button>
+        <i matBadge={{totalOrders()}} matBadgeColor="warn" class="material-icons">shopping_basket</i>
+      </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="page-wrap">
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+    <mat-toolbar>
+      <span class='spacer'></span>
+      <h3>© Copyright Fresh Box.</h3>
+      <span class='spacer'></span>
+    </mat-toolbar>
+  </div>
+
+</mat-sidenav-container>

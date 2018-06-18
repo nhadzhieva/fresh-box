@@ -1,0 +1,8 @@
+.content{
+    margin-top: 5em;
+margin-right: 28em;
+margin-left: 28em;
+display: flex;
+flex-direction: column;
+} 
+

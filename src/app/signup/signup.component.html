@@ -1,0 +1,25 @@
+<div class="content">
+    <mat-toolbar> Sign up</mat-toolbar>
+    <mat-form-field>
+        <input matInput placeholder="Enter your name" required>
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Enter your last name" required>
+          <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+        </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter your email" required>
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required>
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Enter password(again)" [type]="hide ? 'password' : 'text'" required>
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        </mat-form-field>
+      <mat-divider></mat-divider>
+<a  mat-raised-button  color="primary" routerLink=".">SIGN UP</a>      
+</div>
