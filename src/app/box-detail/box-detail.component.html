@@ -1,0 +1,40 @@
+<div class="mat-typography text-centered">
+    <h1 class=" header mat-display-1">Purchase a recipe box. </h1>
+    <mat-grid-list cols="2">
+        <mat-grid-tile>
+            <mat-card class="info">
+                <img mat-card-image src="/assets/images/veggie-box.jpg" alt="Box details">
+                <mat-card-content>
+                    <p>
+                        In the box you will products for find 4 recipes and special cards with detailed instructions how to cook them. Meals are
+                        simple to prepare, taking under 30 minutes to make, and full of exciting flavours to help break your
+                        mealtime routine. We do all the planning and shopping, so you can prepare exciting dinners AND have
+                        more time to spend doing the things you enjoy most.
+                    </p>
+                </mat-card-content>
+                <mat-card-actions class="btn-info">
+                    <a mat-button class="orange-color " routerLink="/recipes">See the recipes included</a>
+                </mat-card-actions>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+
+            <mat-card class="card-purchase">
+                <mat-card-content>
+                    <h1 md-title>$47.95</h1>
+                    <h2 md-subhead>Fresh Box 11-18 August</h2>
+                    <form>
+                            <mat-form-field color="primary">
+                              <input matInput [(ngModel)]="counterOfOrders" name="ordersCount" type="number" placeholder="Quantity" id="myNumber"  min="1">
+                            </mat-form-field>
+                            </form>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a mat-raised-button (click)="addOrder()" routerLink="/checkout" color="primary">Purchase</a>
+                </mat-card-actions>
+            </mat-card>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+
+</div>

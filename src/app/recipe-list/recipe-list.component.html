@@ -1,0 +1,42 @@
+
+<mat-card>Week of 11 - 18 August
+    <a class="button-fixed" mat-raised-button color="primary" routerLink="/box">GET COOKING</a>
+</mat-card>
+<mat-grid-list rowHeight="520" cols="4" role="list">
+  <mat-grid-tile *ngFor="let recipe of recipes" role="listitem">
+    <mat-card class="example-card">
+      <img mat-card-image class="example-header-image" [src]="recipe.imageUrl" alt="Photo of a Ginger-Chicken-Noodles">
+      <mat-card-content>
+        <h4 >{{recipe.title}}</h4>
+        <p>
+          <i class="material-icons">access_time</i>
+          Takes {{recipe.timeForCook}} mins
+          <i class="material-icons">location_on</i>{{recipe.type}} Cuisine 
+        </p>
+</mat-card-content>
+<mat-card-actions class="text-centered">
+  <a class="orange-color " mat-button mat-raised-button routerLink="/recipes/{{recipe._id}}">More info</a>
+ </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-card>Week of 19 - 26 August
+    <a class="button-fixed" mat-raised-button color="primary" routerLink="/box">GET COOKING</a>
+</mat-card>
+<mat-grid-list rowHeight="520" cols="4" role="list">
+  <mat-grid-tile *ngFor="let recipe of recipes" role="listitem">
+    <mat-card class="example-card">
+      <img mat-card-image class="example-header-image" [src]="recipe.imageUrl" alt="Photo of a Ginger-Chicken-Noodles">
+      <mat-card-content>
+        <h4 >{{recipe.title}}</h4>
+        <p>
+          <i class="material-icons">access_time</i>
+          Takes {{recipe.timeForCook}} mins
+          <i class="material-icons">location_on</i>{{recipe.type}} Cuisine</p>
+       </mat-card-content>
+<mat-card-actions class="text-centered">
+    <a class="orange-color " mat-button mat-raised-button routerLink="/recipes/{{recipe._id}}"> More info</a>
+ </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

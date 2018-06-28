@@ -1,0 +1,41 @@
+<div class="content mat-typography">
+<h1>Ten-Min Ginger Chicken Stir-Fry</h1>
+    <mat-divider></mat-divider>
+<div>
+  {{recipe.caption}}
+    <div>
+        <i class="material-icons">access_time</i>
+     {{recipe.timeForCook}} mins time for cook
+    </div>
+   <div> 
+       <i class="material-icons">location_on</i>{{recipe.type}} Cuisine
+    </div>
+    
+</div>
+<mat-divider></mat-divider>
+<h2>
+    In your box
+</h2>
+<div class="list">
+<mat-grid-list cols="5" role="list">
+  <mat-grid-tile *ngFor="let ingredient of recipe.ingredients" role="listitem">
+            <div>
+                <img class="round-img values" [src]="ingredient.imageUrl" alt="ingredient">
+                <p>{{ingredient.quantity}} {{ingredient.name}}</p>
+            </div>
+         
+  </mat-grid-tile>
+</mat-grid-list>
+</div>
+<mat-divider></mat-divider>
+<h3>What you will need:</h3>
+<p>
+    Butter, Salt, Vegetable oil
+</p>
+<mat-divider></mat-divider>
+    <iframe  class="iframe" width="560" height="315" src="https://www.youtube.com/embed/OtLfLQPqRm0"
+     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="text-centered btn-purchase" >
+            <a  mat-raised-button  color="primary" routerLink="/box">Get all intructions and products</a>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+.example-card {
+    /* max-width: 400px; */
+    width: 400px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    margin-right: 25px;
+      margin-left: 25px;
+      /* margin-top: 10px; */
+      margin-bottom: 10px;
+    
+  }
+  .text-centered{
+      text-align: center;
+  }
+  .orange-color.mat-button{
+      background-color: #FB6126;
+      color: #FFF;
+  }
+   .button-fixed{
+    position: absolute;
+    right: 45px;
+    bottom: 15px;
+  }
+
+    

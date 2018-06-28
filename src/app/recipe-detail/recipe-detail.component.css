@@ -1,0 +1,31 @@
+.content{
+  /* max-width: 500px;
+  margin: auto; */
+  margin-right: 15em;
+  margin-left: 15em;
+}
+.round-img{
+    border-radius: 50%;
+ 
+}
+.values{
+  max-height: 250px;
+  min-height: 150px;
+  max-width: 150px;
+  min-width: 50px;
+}
+.iframe{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.text-centered{
+  text-align: center;
+}
+.list{
+  height: 200px;
+}
+.btn-purchase{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

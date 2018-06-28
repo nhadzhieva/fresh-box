@@ -1,0 +1,33 @@
+<img class="img" src="assets/images/red-yellow.jpg">
+<div class="mat-typography">
+  <mat-list>
+    <mat-list-item  (click)="onSelect(order)">
+      <h3 matLine>{{ order.title }} </h3>
+      <form>
+          <mat-form-field class="width" color="primary" >
+            <input matInput [(ngModel)]="counterOfOrders" (click)="addOrder()" name="ordersCount" placeholder="Quantity" type="number" id="myNumber" min="0">
+          </mat-form-field>
+        </form>
+        
+      <mat-icon>attach_money </mat-icon>{{order.price}}
+      <button mat-icon-button class="material-icons close"
+          (click)="deleteOrder(order.id)">
+        <i class="material-icons">close</i>
+      </button>
+
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <h2 matLine>Total amount </h2>
+      <mat-icon >attach_money </mat-icon>{{totalPrice()}}
+    </mat-list-item>
+
+      <a class="button-fixed"mat-raised-button color="primary" routerLink="/login">ORDER</a>
+
+   
+  </mat-list>
+
+
+
+
+</div>

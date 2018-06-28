@@ -1,0 +1,37 @@
+.text-centered{
+text-align: center;
+}
+.card-purchase{
+    width: 250px;
+    height: 200px;
+}
+.header{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.quantity input {
+    width: 46px;
+    height: 40px;
+    border-color: #e3e3e3;
+    border-radius: 5px;
+    padding-left: 3px;
+    color: #898989;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 4px;
+  }
+  .btn-info{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .orange-color.mat-button{
+    background-color: #FB6126;
+    color: #FFF;
+}
+.mat-card.info{
+   -ms-word-break: break-all;
+   /* margin-right: 25px; */
+     margin-left: 50px;
+     margin-bottom: 10px;
+}

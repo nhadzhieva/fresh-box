@@ -1,0 +1,23 @@
+<div class="content">
+    <mat-toolbar> Sign up</mat-toolbar>
+    <form #form="ngForm" (ngSubmit)="signup()" class="add-event-form">
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Enter your name" name="firstName" [(ngModel)]="user.firstName" required>
+            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+          </mat-form-field>
+          <mat-form-field class="full-width" > 
+              <input matInput placeholder="Enter your last name" name="lastName" [(ngModel)]="user.lastName" required>
+              <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+            </mat-form-field>
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Enter your email" name="email" [(ngModel)]="user.email" required>
+            <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+          </mat-form-field>
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Enter your password" name="password" [(ngModel)]="user.password" [type]="hide ? 'password' : 'text'" required>
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+          </mat-form-field>
+          <button mat-raised-button  color="primary" routerLink=".">SIGN UP</button>   
+    </form>
+    
+</div>
